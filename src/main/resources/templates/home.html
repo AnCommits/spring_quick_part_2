@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!-- Атрибут xmlns:th="http://www.thymeleaf.org" эквивалентен импорту в Java.
+    Позволяет обозначать префиксом th специальные свойства представления -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+</head>
+<body>
+<h1>Welcome
+  <!-- Используем префикс th для значений, переданных контроллером -->
+  <span th:style="'color:' + ${color}"
+        th:text="${username}"></span>!</h1>
+</body>
+</html>
